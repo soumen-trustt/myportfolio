@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+  h2, h3, .projects-header, .section-title {
+    color: #fff !important;
+    opacity: 1 !important;
+    text-shadow: 0 2px 8px #000a;
+    position: relative;
+    z-index: 101;
+  }
+}

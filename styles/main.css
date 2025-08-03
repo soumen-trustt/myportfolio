@@ -8,7 +8,13 @@
 }
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px; /* Adjust to match header height */
+    scroll-padding-top: 90px; /* desktop header height */
+}
+
+@media (max-width: 800px) {
+    html {
+        scroll-padding-top: 60px; /* mobile header height, adjust if your header is taller/shorter */
+    }
 }
 body {
     background: #181818;
@@ -83,6 +89,19 @@ section {
 
 /* Hamburger menu styles for mobile */
 @media (max-width: 800px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #181818;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 100;
+    }
+    .navbar.open {
+        display: flex;
+    }
     .hamburger {
         display: flex !important;
         justify-content: center;

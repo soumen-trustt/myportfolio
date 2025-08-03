@@ -7,6 +7,8 @@
     <title>Soumen Manna</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/fix-mobile-headings.css">
+    <link rel="stylesheet" href="styles/fix-mobile-header.css">
     <script src="scripts.js"></script>
 </head>
 <body>
@@ -152,7 +154,7 @@
         const expanded = hamburger.getAttribute('aria-expanded') === 'true';
         hamburger.setAttribute('aria-expanded', !expanded);
     });
-    // Close menu when a link is clicked
+    // Close menu when a link is clicked (restore ☰)
     navbar.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 800) {
