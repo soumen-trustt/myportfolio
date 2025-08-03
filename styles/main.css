@@ -238,6 +238,48 @@ section {
         padding: 7px 10px;
         font-size: 0.95rem;
     }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 60px;
+        background: #181818ee;
+        z-index: 300;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        border-bottom: 1.5px solid #23272f;
+        box-sizing: border-box;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #181818;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 60px;
+        z-index: 200;
+        box-sizing: border-box;
+    }
+    .navbar.open {
+        display: flex;
+    }
+    .logo {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        color: #ff3b3b;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: 1px;
+        opacity: 1;
+    }
 }
 
 @media (max-width: 800px) {
